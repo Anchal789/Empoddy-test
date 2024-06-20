@@ -1,0 +1,310 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+.container {
+    background-color: rgb(18, 17, 17);
+    color: white;
+    margin: 50px auto;
+    border-radius: 30px;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.navbar {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.line {
+    background-color: aqua;
+    width: 5px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.nav-right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.year-selection {
+    background-color: rgb(18, 17, 17);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: fit-content;
+}
+
+.download-btn {
+    background-color: aqua;
+    padding: 8px;
+    border-radius: 7px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.download-icon {
+    width: 20px;
+}
+
+.image-profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.employee-info {
+    display: flex;
+    align-items: center;
+}
+
+.employee-card {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 170px);
+}
+
+.name-employee {
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.professional-details {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.role-phone-email p {
+    color: gray;
+    font-weight: 300;
+    font-size: medium;
+}
+
+.check-in-details {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.check-in {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(41, 41, 41);
+}
+
+.check-in-image {
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+}
+
+.check-in div h1 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.check-in div p {
+    color: gray;
+    font-size: 14px;
+}
+
+.nav-icon {
+    width: 30px;
+    padding: 5px;
+    border-radius: 7px;
+    border: 1px solid gray;
+}
+
+.list-view {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.sort {
+    border: 1px solid gray;
+    border-radius: 7px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.sort-icon {
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+
+.sort h4 {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.history {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.histroy-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(41, 41, 41);
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.date h5 {
+    background-color: rgba(0, 128, 0, 0.273);
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(0, 255, 94);
+    font-size: large;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.date h4 {
+    margin: 0;
+    font-size: large;
+}
+
+.check-in-out {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.check-in-time p, .check-out-time p {
+    color: gray;
+    font-weight: 300;
+    font-size: medium;
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+footer h3 {
+    color: gray;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3:active {
+    background-color: gray;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .employee-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employee-card {
+        width: 100%;
+    }
+
+    .name-employee {
+        text-align: center;
+    }
+
+    .professional-details {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .check-in-details {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .history {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .navbar, .nav-right, .nav-left {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .download-btn {
+        padding: 5px;
+    }
+
+    .sort h4, .nav-right h4 {
+        display: none;
+    }
+
+    .check-in div h1 {
+        font-size: 18px;
+    }
+
+    .check-in div p {
+        font-size: 12px;
+    }
+
+    .date h5, .date h4 {
+        font-size: medium;
+    }
+
+    .history, .check-in-details {
+        gap: 20px;
+    }
+}
